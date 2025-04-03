@@ -43,10 +43,10 @@ export default function Form() {
     return (
 	<form action={incluirPessoa} className={styles.form}>
 	<h2>Formulario</h2>
-	<p>Nome <input type="text"  value={nome}     onChange={(e) => hangleChange(e, setNome)    }/>
+	<p>Nome <input type="text"  value={nome}     onChange={(e) => handleChange(e, setNome)    }/>
 	</p>
-	<p> Email: <input type="email" value={email}    onChange={(e) => hangleChange(e, setEmail)   }/> </p>
-	<p>Telefone: <input type="tel"   value={telefone} onChange={(e) => hangleChange(e, setTelefone)}/></p>
+	<p> Email: <input type="email" value={email}    onChange={(e) => handleChange(e, setEmail)   }/> </p>
+	<p>Telefone: <input type="tel"   value={telefone} onChange={(e) => handleChange(e, setTelefone)}/></p>
 
 	<button type="submit">Incluir!</button>
 	<p>{mensagem}</p>
